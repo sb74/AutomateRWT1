@@ -5,7 +5,6 @@ from PIL import Image
 def process_images(orig_folder, new_folder):
     """
     Converts images to JPEG and rotates/resizes.
-    :rtype: List
     """
     size = (128, 128)
     deg = -90
@@ -30,9 +29,7 @@ def process_images(orig_folder, new_folder):
 
 
 if __name__ == '__main__':
-
     origin = r"C:\Users\sbran\Desktop\Tiffs"
     new = r"C:\Users\sbran\Desktop\Tiffs\New"
 
     process_images(origin, new)
-
