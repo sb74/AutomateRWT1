@@ -19,7 +19,7 @@ def process_images(orig_folder, new_folder):
             im = Image.open(image_path)
 
             # Rotate, convert input image, and save in new location.
-            new_path = os.path.join(new_folder, file  + convert_type)
+            new_path = os.path.join(new_folder, file + convert_type)
             im.rotate(deg).convert("RGB").resize(size).save(new_path)
 
     return
@@ -33,4 +33,3 @@ if __name__ == '__main__':
     new = r"/opt/icons/"
 
     process_images(origin, new)
-
